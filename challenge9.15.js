@@ -29,4 +29,28 @@ function nonSenseRec(string){
     return go(stringtest)
 }
 
-nonSenseRec('this is fun’)
+nonSenseRec('this is fun')
+
+var vowels = { 
+   'a': true,
+   'o': true,
+   'i': true,
+   'e': true,
+   'u': true,
+   ' ': true
+}
+
+function check(letter){
+    str = letter.split('')
+    var result = '';
+    for(var i in letter){
+     if(vowels[str[i]]){
+         result += str[i]
+     }
+     else{
+         result += str[i] + 'o' + str[i];
+     }
+}
+console.log(result)
+}
+check('Thr rbrt tacs ff ptr')
