@@ -3,7 +3,7 @@ var Cart = ('./cart');
 describe('cart', function(){
   it('starts at empty', function(){
     var cart = new Cart();
-    expect(cart.empty).toEqual(true)
+    expect(cart.status).toEqual(0)
   });
 
   it('allows items to be added and removed', function(){
